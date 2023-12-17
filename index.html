@@ -1,0 +1,56 @@
+<!DOCTYPE hmtl>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Calculadora de Mermas</title>
+        <script src="./script.js" defer></script>
+    </head>
+    <body>
+        <div id="contenedor">
+            <div id="calculadora">
+                <div class="contenido">
+                    <h1>Calculadora de Mermas</h1>
+                    
+                    <p class="item">Ingresar stock inicial:</p>
+                    <input type="number" id="stock" placeholder="Peso en Kg." />
+                    <p class="item resultado" id="error">* El peso debe ser un valor positivo siempre.</p>
+                    
+                    <p class="item">Ingresar producción:</p>
+                    <input type="number" id="produ" placeholder="Peso en Kg." />
+                    <p class="item resultado" id="error">* El peso debe ser un valor positivo siempre.</p>
+
+                    <p class="item">Ingresar ventas del día:</p>
+                    <input type="number" id="ventas" placeholder="Peso en Kg." />
+                    <p class="item resultado" id="error">* El peso debe ser un valor positivo siempre.</p>
+
+                    <p class="item">Ingresar egresos del día:</p>
+                    <input type="number" id="egreso" placeholder="Peso en Kg." />
+                    <p class="item resultado" id="error">* El peso debe ser un valor positivo siempre.</p>
+
+                    <p class="item">Ingresar stock final del día (Actual):</p>
+                    <input type="number" id="saldo" placeholder="Peso en Kg." />
+                    <p class="item resultado" id="error">* El peso debe ser un valor positivo siempre.</p>
+
+                    <button class="item" id="calcular">Calcular</button>
+                    <p class="item resultado" id="sCont"> Mermas</p> 
+                    <p class="item resultado" id="merma"> Mermas</p> 
+                    <p class="item resultado" id="mPorc"> Mermas línea 2 </p>
+                </div>
+            </div>
+            <div id="detalle">
+                <div class="contenido">
+                    <div class="logo">
+                        <img src="https://carnicerialoslopez.com/images/logo.png" alt="" width="180" height="120" />
+                    </div>
+                    <h1>¿Cómo se calcula?</h1> 
+                    <ul>    
+                        <li>La calculadora de merma está inicialmente diseñada para mantener un control de stock interno de las góndolas vacunas del establecimiento.</li> <br />
+                        <li>La diferencia máxima que se debe tener en cuenta es de 2.5% para considerar el máximo rendimiento de la materia prima y que no ocasionen pérdidas.</li> <br />
+                        <li>La cantidad mermada de Kg de carne es un factor determinante al momento de la asignación de costos, ya que influye en los niveles de rentabilidad de la producción y ventas de la misma.</li> <br />
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
